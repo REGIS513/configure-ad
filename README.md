@@ -21,10 +21,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create a Resource Group
+- Create a Virtual Network and Subnet
+- Create the Domain Controller VM (Windows Server 2022) named DC-1
+- Login to the VM using your username and password
+- Create another VM named Client-1 using Windows 10
+- Login to that VM using your user name and password
+- Make sure to use the same Virtual Network and region as DC-1
+- After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address
+- From the Azure Portal, restart Client-1
+- Login to Client-1
+- Attempt to ping DC-1’s private IP address
+- From Client-1, open PowerShell and run ipconfig /all
 
 <h2>Deployment and Configuration Steps</h2>
 
